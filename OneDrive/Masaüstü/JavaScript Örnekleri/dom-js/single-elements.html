@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <div class="card-header">
+        <h3 id="title">Gürkanın toto</h3>
+    </div>
+
+
+    <ul id="task-list">
+        <li>
+            görev 1
+        </li>
+         <li>
+            görev 2
+        </li>
+         <li>
+            görev 3
+        </li>
+    </ul>
+
+    <script>
+
+        let sonuc;
+        
+        sonuc = document.getElementById("title");
+        sonuc = document.getElementById("title").id; //title ıd si almak için kullanılır.
+        sonuc = document.getElementById("title").className;
+        sonuc = document.getElementById("title").classList; //class içerisindeki listelere erişim sağlar.
+
+
+        // style etiketi css ile bağlama.
+        document.getElementById("title").style.fontSize = "30px"; // Css yazma bu yazı ile yazının fontunu ayarlarız.
+        document.getElementById("title").style.color = "red"; // yazının rengini ayalrarız 
+
+
+        document.getElementById("title").innerText = "Rafa Silva"; // Title ile içerisinde yazan yazıyı değiştirir.
+        document.getElementById("title").innerHTML = "<p>Rafa Silva</p>";
+
+
+        
+        sonuc = document.querySelector("#title"); // ıd si title olanı seçer.
+        sonuc = document.querySelector(".card-header"); // burdada card-header'a ulaşmak için kullanılır
+        sonuc = document.querySelector("div"); // sayfadaki ilk div elementini gösterir. 
+        sonuc = document.querySelector("li:first-child"); // ilk li gösterir.
+        sonuc = document.querySelector("li:nth-child(1)"); // Burda kaçıncı istediğiniz li elementini çağırır.
+
+       
+       
+        console.log(sonuc);
+
+    </script>
+
+</body>
+</html>

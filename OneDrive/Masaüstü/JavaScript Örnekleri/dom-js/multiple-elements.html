@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <div class="card-header">
+        <h3 class="cart-title h1"  id="title">Gürkanın toto</h3>
+    </div>
+
+
+    <ul id="task-list">
+        <li class="task"> görev 1</li>
+        <li class="task"> görev 2</li>
+        <li class="task"> görev 3</li>
+    </ul>
+
+    <ul id="task-list2">
+        <li class="task"> görev 1</li>
+        <li class="task"> görev 2</li>
+        <li class="task"> görev 3</li>
+    </ul>
+    <script>
+
+        let sonuc;
+        
+        sonuc = document.getElementsByClassName("task")[0];
+        sonuc = document.getElementsByClassName("task")[1];
+
+        // sonuc = document.getElementsByClassName("task");
+
+        //ul = document.getElementById("task-list");
+        //taskList = document.getElementsByTagName("li");
+        
+        /*
+        for (let i=0; i<taskList.length; i++) {
+            console.log(taskList[i]);
+        }
+
+        for(let task in taskList){  // index numaralrını gösterir.
+            console.log(task);
+        }
+
+        for(let task of taskList){  // elemanlara tek tek ulaşmak için kullanılır.
+            console.log(task);
+        }
+        */
+
+        taskList = document.querySelectorAll("li"); //topluca element seçmek için kullanılır.
+
+          for(let task of taskList) {  // elemanlara tek tek ulaşmak için kullanılır.
+            task.style.color = "red";
+            task.style.fontSize = "20px";
+        }
+
+
+
+       // console.log(sonuc);
+
+    </script>
+
+</body>
+</html>
